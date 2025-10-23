@@ -19,6 +19,11 @@ const Layout = () => {
                     </a>
                   </li>
                   <li>
+                    <a class="menutrai" href="/ListSanPham">
+                      SanPham
+                    </a>
+                  </li>
+                  <li>
                     <a class="menutrai" href="/trang1">
                       {" "}
                       EGOV

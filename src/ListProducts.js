@@ -4,14 +4,14 @@ import { useNavigate } from "react-router-dom";
 
 const ListProduct = () => {
   const [listproduct, setListProduct] = useState([]);
-  const [loading, setLoading] = useState(true); 
+  const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
   useEffect(() => {
     const LayDulieutuBackend = async () => {
       try {
         const res = await axios.get(
-          "https://68f97a99ef8b2e621e7c302b.mockapi.io/products"
+          "https://68f999c7ef8b2e621e7ccc40.mockapi.io/hce"
         );
 
         if (Array.isArray(res.data) && res.data.length > 0) {
