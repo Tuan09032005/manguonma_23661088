@@ -1,7 +1,9 @@
+/* ================= BODY ================= */
 body {
   margin: 0;
 }
 
+/* ================= BANNER ================= */
 .banner {
   height: 126px;
   background-color: #fff;
@@ -12,21 +14,19 @@ body {
   align-items: center;
 }
 
+/* ================= HEADER ================= */
 .header {
   display: flex;
   flex-direction: column;
   height: 180px;
   background-color: #fff;
 }
+
+/* ================= MENU TRÊN CÙNG ================= */
 .menutrai {
   display: flex;
   flex-direction: row;
   width: 270px;
-}
-
-.menubar {
-  background-color: #b22d30;
-  height: 52px;
 }
 
 #menutrai {
@@ -36,10 +36,12 @@ body {
 
 #menutrai ul {
   margin-right: 10px;
+  display: flex;
+  padding: 0;
 }
 
 #menutrai ul li {
-  list-style-type: none;
+  list-style: none;
   margin-left: 10px;
   max-width: 80px;
 }
@@ -57,10 +59,65 @@ a.menutrai:visited {
 
 a.menutrai:hover {
   color: #5426d1;
-  font-family: "Times New Roman", Times, serif;
 }
 
 a.menutrai:active {
   color: #190c3f;
+}
+
+/* ================= NAVBAR ĐỎ ================= */
+.menubar {
+  background-color: #b22d30;
+  height: 52px;
+}
+
+#menubar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+#menubar li {
+  list-style: none;
+  margin: 0 20px;
+  position: relative;
+}
+
+#menubar li a {
+  color: white;
+  text-decoration: none;
+  font-size: 23px;
+  line-height: 52px;
   font-family: "Times New Roman", Times, serif;
+}
+
+/* Dropdown menu */
+#menubar li ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  min-width: 200px;
+  padding: 0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#menubar li:hover > ul {
+  display: block;
+}
+
+#menubar li ul li {
+  padding: 8px;
+}
+
+#menubar li ul li a {
+  color: gray;
+}
+
+#menubar li ul li a:hover {
+  color: #b22d30;
 }
