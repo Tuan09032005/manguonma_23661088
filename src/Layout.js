@@ -106,7 +106,7 @@ const Layout = () => {
                       <a href="#">phòng ban</a>
                     </li>
                     <li>
-                      <a href="#">khoa chuyên môn</a>
+                      <a href="#">khoa chuyênmôn</a>
                     </li>
                     <li>
                       <a href="#">trung tâm</a>
