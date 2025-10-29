@@ -31,7 +31,7 @@ const Layout = () => {
                   </li>
                   <li>
                     <a class="menutrai" href="/trang2">
-                      SINH VIEN
+                      SINH VIÊN
                     </a>
                   </li>
                 </ul>
